@@ -1,9 +1,2 @@
 *
-
-# No ignorar el archivo .gitignore
 !.gitignore
-
-# Incluir carpetas específicas
-!i3/
-
-# Si quieres incluir otros archivos o carpetas específicos, añádelos aquí
