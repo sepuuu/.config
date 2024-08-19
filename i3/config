@@ -187,4 +187,22 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+	position top
 }
+
+
+
+# Removes titlebars and adds borders
+for_window [class=".*"] border pixel 3
+
+# class					border	backgr.	text	indic.	child_border
+client.focused			#303030	#303030	#aaaaaa	#303030	#303030
+client.focused_inactive	#222222	#222222	#aaaaaa	#222222	#222222
+client.unfocused		#222222	#222222	#aaaaaa	#222222	#222222
+
+# Adds gaps in between windows and on the outside
+gaps inner 7
+gaps top 10
+
+
+exec_always "picom"
